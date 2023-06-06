@@ -681,9 +681,17 @@ a {
     margin-left: -16px;
     margin-bottom: 16px;
 }
-.main_colomnbase__left-nav-li:not(245px) {
-    background-color: #ccc;
+.main_colomnbase__left-nav-li:active[aria-current="true"] + .main_colomnbase__left-nav-li::after {
+    content: "";
+    position: absolute;
+    top: -143px;
+    left: 236px;
+    width: 0.25rem;
+    height: calc(1vh);
+    background-color: #ff3f82;
+    border-radius: 6px;
 }
+
 .main_colomnbase-line {
     margin-left: -24px;
     min-width: 265px;
@@ -694,6 +702,7 @@ a {
 }
 .main_colomnbase__left-nav-ul {
     gap: 30px;
+    position: relative;
 }
 .main_colomnbase__left-nav-code {
     font-family: 'Nunito Sans';
@@ -738,13 +747,6 @@ a {
     display: block;
     margin-top: -20px;
 }
-/*.right_blue_arrow {
-    display: none;
-}
-.main_colomnbase__left-nav-li:active + .right_blue_arrow {
-    display: block;
-    margin-left: 4px;
-}*/
 .main_colomnbase__right-top {
     display: flex;
     flex-wrap: wrap;
