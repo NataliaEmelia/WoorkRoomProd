@@ -684,7 +684,7 @@ a {
 .main_colomnbase__left-nav-li:active[aria-current="true"] + .main_colomnbase__left-nav-li::after {
     content: "";
     position: absolute;
-    top: -119px;
+    top: 0;
     left: 236px;
     width: 0.25rem;
     height: 100px;
