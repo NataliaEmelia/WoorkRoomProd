@@ -684,11 +684,11 @@ a {
 .main_colomnbase__left-nav-li:active[aria-current="true"] + .main_colomnbase__left-nav-li::after {
     content: "";
     position: absolute;
-    top: -143px;
+    top: -119px;
     left: 236px;
     width: 0.25rem;
-    height: calc(1vh);
-    background-color: #ff3f82;
+    height: 100px;
+    background-color: #3F8CFF;
     border-radius: 6px;
 }
 
@@ -725,12 +725,12 @@ a {
 .main_colomnbase__left-nav-active {
     display: none;
 }
-.main_colomnbase__left-nav-item:active + .main_colomnbase__left-nav-active {
+/*.main_colomnbase__left-nav-item:active + .main_colomnbase__left-nav-active {
     display: block;
     position: absolute;
     left: 252px;
     top: 1px;
-}
+}*/
 .main_colomnbase__left-nav-item:active .main_colomnbase__left-nav-title {
     font-weight: 700;
 }
